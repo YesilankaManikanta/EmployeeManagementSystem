@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">EMS</div>
+        <h2>Employee Management System</h2>
+    </header>
+
+    <main class="container">
+        <section class="card form-card">
+            <h2>Employee Registration</h2>
+            <p class="subtitle">Create your employee account</p>
+
+            <form action="registerEmployee" method="post">
+
+                <label for="empId">Employee ID</label>
+                <input type="number" id="empId" name="empId" min="1" step="1"
+                       placeholder="Enter employee ID" required>
+
+                <label for="empName">Full Name</label>
+                <input type="text" id="empName" name="empName"
+                       placeholder="Enter full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter email address" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select department</option>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                </select>
+
+                <label for="salary">Salary</label>
+                <input type="number" id="salary" name="salary"
+                       placeholder="Enter salary" min="0" step="100" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a password" required>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+            <p class="form-footer">
+                Already registered?
+                <a href="login.html">Login here</a>
+            </p>
+            <p class="form-footer">
+                <a href="index.html">Back to Home</a>
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>

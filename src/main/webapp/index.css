@@ -1,0 +1,224 @@
+
+/* Character encoding */
+@charset "UTF-8";
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: #173f70;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo styling */
+.logo {
+    background-color: white;
+    color: #173f70;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Navigation bar heading */
+.navbar h2 {
+    font-size: 21px;
+}
+
+/* Main content container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/* Welcome section styling */
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Main welcome heading */
+.welcome h1 {
+    color: #173f70;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Welcome section description */
+.welcome p {
+    color: #607080;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Layout for login and registration cards */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common card styling */
+.card {
+    background-color: white;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Card heading */
+.card h2 {
+    color: #173f70;
+    margin-bottom: 15px;
+}
+
+/* Card description */
+.card p {
+    color: #607080;
+    line-height: 1.6;
+    min-height: 50px;
+    margin-bottom: 22px;
+}
+
+/* Common button and link styling */
+.btn {
+    display: inline-block;
+    background-color: #1769aa;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #104875;
+}
+
+/* Footer styling */
+footer {
+    background-color: #173f70;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+
+    /* Adjust navigation bar spacing */
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    /* Reduce navigation heading size */
+    .navbar h2 {
+        font-size: 17px;
+    }
+
+    /* Reduce welcome heading size */
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    /* Adjust container spacing */
+    .container {
+        padding: 35px 0;
+    }
+
+    /* Make cards occupy the available width */
+    .card {
+        width: 100%;
+    }
+}
+
+/* Registration and login form container */
+.form-card {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Center the form heading */
+.form-card h2 {
+    text-align: center;
+}
+
+/* Form subtitle styling */
+.subtitle {
+    text-align: center;
+    color: #607080;
+    margin-bottom: 22px;
+}
+
+/* Form label styling */
+.form-card label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+/* Input fields and dropdown styling */
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+/* Form submit button styling */
+.form-card .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Form footer text styling */
+.form-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+/* Links inside the form footer */
+.form-footer a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+/* Hover effect for footer links */
+.form-footer a:hover {
+    text-decoration: underline;
+}
